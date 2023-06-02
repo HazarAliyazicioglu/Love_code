@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aşk</title>
+    <style>
+        .container {
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            height: 615px;
+            width: 700px;
+            padding-top: 30px;
+            
+        }
+        
+        .buttoncontainer {
+            display:flex;
+            flex-direction: row;
+        }
+        
+        .button {
+            padding: 10px 20px;
+            font-size: 18px;
+            display:flex;
+            flex-direction: row;
+            transition:  0.5s none;
+            margin: 2rem;
+        }
+        #yesbutton {background-color: rgb(5, 221, 5);}
+        #noButton{
+            margin-left: 0px;
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
+    <script>
+        function noButton() {
+            var button = document.getElementById('noButton');
+            var randomLeftPosition = Math.floor(Math.random() * (500));
+            var randomTopPosition = Math.floor(Math.random() * (300));
+            button.style.transform = 'translate(' + randomLeftPosition + 'px, ' + randomTopPosition + 'px)';
+        }
+        
+        const yesButton = () => {
+            alert("Beni sevdiğini biliyordum :)")  
+             
+        }</script>
+</head>
+<body>
+    <div id="container" class="container">
+        <h1>Solucan olsam beni sever miydin?</h1>
+        <div id="container" class="buttoncontainer">
+            <button id="yesbutton" class="button yes" onclick="yesButton()" type="button">EVET</button> 
+            <button id="noButton" class="button no" onmouseover="noButton()">Hayır</button>
+        </div>
+    </div>
+</body>
+</html>
