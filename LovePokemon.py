@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 
 def click():
-    messagebox.showinfo(title="I LOVE YOU", message="I LOVE YOU SOOOOO MUCH  💖💗💕❤️")
+    messagebox.showinfo(title="I LOVE YOU", message="YOU ARE MY POKEMON AND I LOVE YOU SOOOOO MUCH  💖💗💕❤️")
 
 
 window = Tk()
